@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(45deg,blue,yellow);
+}
+
+h1{
+    font-style: italic;
+    color: rgb(190, 16, 16);
+}
+
+.space-container{
+    height: 350px;
+    width: 350px;
+    perspective: 600;
+}
+
+.card-container{
+    height: 90%;
+    width: 90%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.space-container:hover .card-container{
+    transform: rotateY(180deg);
+}
+
+.card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px rgb(197, 160, 160);
+}
+.card-container i{
+    font-size: 50px;
+}
+
+.card-container p{
+    text-align: center;
+}
+
+.card-container button{
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+.front{
+    background-color: blue;
+    padding: 20px;
+}
+
+.back{
+    background-color: yellow;
+    padding: 20px;
+    transform: rotateY(180deg);
+}
+
+.back:hover .front{
+    transform: rotateY(-180deg);
+}
+

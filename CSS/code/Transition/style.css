@@ -1,0 +1,44 @@
+/* transition: transition-property transition-duration transition-timing-function transition-delay*/
+
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transition: height 2s, width 2s;
+}
+
+div:hover{
+    height: 400px;
+    width: 400px;
+} */
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    /* transition: width 5s, transform 2s; */
+    transition: all 5s ease-in;
+}
+
+#box1:hover{
+    transform: translateX(400px) rotate(360deg);
+    /* transform: rotate(180deg); */
+    border-radius: 50%;
+}
+
+
+/* #box1{
+    transition-timing-function: linear;
+}
+#box2{
+    transition-timing-function: ease;
+}
+#box3{
+    transition-timing-function: ease-in;
+}
+#box4{
+    transition-timing-function: ease-out;
+}
+#box5{
+    transition-timing-function: ease-in-out;
+}*/

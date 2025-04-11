@@ -1,0 +1,154 @@
+colors
+------
+colorhunt.co
+https://www.realtimecolors.com/
+color picker
+color extension
+what font extension
+
+fonts:
+-------
+google fonts
+dafonts
+1001fonts
+
+images
+--------
+https://unsplash.com/
+https://www.freepik.com/
+pexels
+ideogram ai
+
+
+
+
+
+CSS- cascading stylesheet.
+1.inline css
+	Using 'style' attribute inside body. <h1 style="properties"></h1>
+
+Remaining two types internal and external css we can give styling to an element in 3 ways.
+	1.By using tag----h1{properties}
+	2.With className----.className{properties}
+	3.With idName---- #idName{properties}
+
+Order of priority: id>class>tag
+
+2.internal css
+	Using 'style' element recommended to use in head element.
+	<head>
+	    <style>properties</style>
+	</head>
+
+3.external css
+	---link css file in html file by using link tag.
+	<link rel="stylesheet" href="path of css file" />
+
+Order of priority: inline>internal>external
+
+COLORS:  1.color name 2.rgb 3.rgba 4.hsl 5.hsla 6.hue
+
+
+BACKGROUND:
+
+background/background-image : linear-gradient(mention degree/direction,color1,color2......)
+Here degree-45deg ,60deg etc... direction-to top left right bottom.
+
+3 types of gradients.
+1.linear-gradient. linear-gradient(mention degree/direction,color1,color2......)
+2.radial-gradient. radial-gradient(color1,color2......)
+3.conic-gradient. llinear-gradient(color1,degree,color2,degree......) 
+
+Background-properties: (background-image: url(''))
+1.background-repeat: repeat-x/repeat-y/no-repeat
+2.background-position: top/left/right/bottom,corner....
+3.background-size: contain/cover/auto
+4.background-attachment: fixed/scrollable
+
+Font-properties:
+1.Font families- serif		- with strokes Ex.Times new roman...
+		 sans-serif     - no strokes    Ex. calibri,ariel,poppings etc..
+		 monospace	- same height and gap Ex.space-mono
+		 cursive
+		 modern/fantasy - special purposes
+2.font-size 
+3.font-weight - (100-900) degree of boldness
+4.font-style - normal/italic/oblique
+
+Text-properties:
+1.text-align:left/right/top/bottom/center/justify
+2.text-decoration:(size) (solid/double/dotted/dashes/wavy) (color) (underline/overline/linethrough/none)
+3.text-transfrom:uppercase/lowercase/captilize name
+4.text-shadow:x-axis y-axis z-axis color
+
+
+
+Units:******
+1.px - smallest unit , screen division(mxn) resolution number of pixels.
+2.%  - percent of parent
+3.vh,vw -viewport
+4.em - 1em is 1time of parent font-size.
+5.rem - root enumerated value(default:16px).
+
+
+					BOX MODEL (Heart of css, every element is a box)
+
+					1.border
+					2.padding
+					3.margin
+
+1.border properties:
+    i.border: (size) (solid/dotted/dashed/double/groovy) (color);
+    for specific border direction we can give border-top bottom left right
+    ii.border-radius: 50% means circle for square box.
+
+2.padding:Gap between border and content
+we can give padding padding top bottom left right
+
+Note: For avoiding increasing size of box by increasing padding we use box-sizing:border-box;
+
+3.margin-Gap between elements
+we can give margin margin top bottom left right
+
+
+FLOAT:
+float:left/right/none
+
+CLEAR:
+clear:left/right/both
+
+POSITION PROPERTIES:
+
+1.static-default
+2.relative-move from current position
+3.absolute-move from body
+4.fixed-like absolute but fixed
+5.sticky-relative+fixed
+
+Flexbox
+1.display:Flex
+2.flex-direction:row/colun/row-reverse/column-reverse
+3.justify-content:start/end/first/last/center/space-between/space-around/space-evenly
+4.align-items:start/end/center
+5.flex-wrap:nowrap/wrap/wrap-reverse
+6.align-content:start/end/first/last/center/space-between/space-around/space-evenly
+7.gap:gap b/w elements
+
+child properties:
+1.flex-grow
+2.flex-shrink
+3.flex-basis
+4.order
+5.align-self
+
+
+
+
+
+
+
+
+
+
+
+

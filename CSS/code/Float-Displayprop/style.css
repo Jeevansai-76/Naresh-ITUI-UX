@@ -1,0 +1,40 @@
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    /*float: right;*/
+    display: inline-block;
+}
+
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    /*clear: right;*/
+    display: inline-block;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+img{
+    float:right;
+}
+p{
+    clear: right;
+}
+
+h1{
+    display: inline;
+}
+
+p{
+    display: inline;
+}
+
+a{
+    display: block;
+}

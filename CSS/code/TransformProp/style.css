@@ -1,0 +1,19 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    /* transform: translate(50px,100px); translateX() or translateY() */
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    /* transform: rotate(-20deg); */
+    /* transform: scale(2,3); x-axis y-axis */
+    /* transform: scaleX(0.5); */
+    /* transform: scaleY(3); */
+    /* transform: skewX(20deg); */
+    /* transform: skewY(20deg); */
+    /* transform: skew(20deg, 10deg); */
+    /* transform: matrix(1, 0.3, 0, 1, 0, 0); */
+
+    /* 3D-transform */
+    /* transform: rotateX(110deg); */
+}

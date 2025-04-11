@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+
+@font-face {
+    font-family: JeevanFont;
+    src: url(./Keyna.ttf);
+}
+
+@font-face {
+    font-family: Jeevanfont1;
+    src: url(./TerribleCursive.ttf);
+}
+
+body{
+    /*background-color: rgb(197, 133, 53);*/
+    height: 100vh;
+    /*background-image: linear-gradient(45deg,orange,red,orange,red,orange,red);*/
+    /*background-image: radial-gradient(orange,red,orange,red,orange,red);*/
+    /*background-image: conic-gradient(orange,60deg,red,90deg,blue,160deg,yellow);*/
+    /*background-image: url(./bg-nature.jpeg);*/
+    /*background-image: url('https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;*/
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    /*font-family: "Jaini", system-ui;*/
+    font-family: 'JeevanFont1';
+}

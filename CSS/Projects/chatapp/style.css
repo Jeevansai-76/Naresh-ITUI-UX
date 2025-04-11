@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(270, 20%, 96%);
+    margin: 200px;
+    font-size: 15px;
+    background: linear-gradient(to right, #aa076b, #61045f); 
+}
+
+.left-container{
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    height: 90vh;
+    width: 60vh;
+    background-color: #b23fff;
+    border-radius: 0% 0% 100% 100%;
+}
+
+.right-container{
+    position: absolute;
+    top: -100px;
+    left: 140px;
+    height: 66% ;
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    
+}
+
+.left{
+    height: 100%;
+    width: 23%;
+    border-radius: 20px;
+    padding: 7px;
+    background-color: white;
+}
+
+.card{
+    height: 100%;
+    background-color: rgb(245, 223, 223);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 20px;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background:linear-gradient(to right ,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px 5px 5px ;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.left-header{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 5px;
+}
+
+#greater{
+    color: white;
+    font-size: 5px;
+    margin-top: 2px;
+}
+
+.samImg{
+    border-radius: 50%;
+    height: 22px;
+    border: 1px solid white;
+    margin-top: 2px;
+}
+
+.left-header-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.person-name{
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.person-status{
+    color: hsl(276, 100%, 81%);
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.right-header{
+    height: 0.5px;
+    padding: 2px;
+    padding-right:5px ;
+    color: hsl(0, 0%, 100%);
+}
+
+.message1{
+    margin-left: 8px;
+    height: 30px;
+    width: 56%;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 8px;
+    background-color: hsla(272, 9%, 68%, 0.386);
+    border-radius: 10px;
+}
+
+.message2{
+    margin-left: 8px;
+    height: 34px;
+    width: 56%;
+    padding: 5px;
+    padding-left: 8px;
+    background-color: hsla(272, 9%, 68%, 0.386);
+    border-radius: 10px;
+}
+
+
+.chat-message{
+    color: hsl(276, 55%, 52%);
+    line-height: 1.2;
+    font-size: 7.5px;
+    font-weight: 600;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.image-container{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    padding-top: 2px;
+    padding-right: 5px;
+}
+
+.imag{
+    height: 33px;
+    width: 33px;
+    border-radius: 10px;
+}
+
+.message-user{
+    height: 28px;
+    width: 58%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px;
+    padding-left: 5px;
+    margin-right: 5px;
+}
+
+.chat-user1{
+    color: hsl(271, 15%, 43%);
+    font-size: 7px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.message-user1{
+    height: 20px;
+    width: 38%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 0 5px 7px ;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.chat-message1{
+    color: hsl(276, 55%, 52%);
+    line-height: 1.3;
+    font-size: 7px;
+    font-weight: 600;
+}
+
+.message3{
+    height: 38  px;
+    width: 56%;
+    background-color: hsla(272, 9%, 68%, 0.386);
+    border-radius: 10px;
+    padding: 3px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 5px;
+    margin-left: 8px;
+}
+
+.submit-button{
+    height: 30px;
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    background:linear-gradient(to right ,hsl(293, 100%, 63%),hsl(264, 100%, 61%));  
+    border-radius:10px 10px 10px 5px ;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.submit-sec{
+    padding: 5px;
+}
+.radio{
+    border: 1px solid white;
+    outline: hsl(289, 100%, 72%);
+}
+
+label{
+    color: hsl(206, 6%, 79%);
+    font-size: 8px;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.submit-price{
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.message-container{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+input[type="text"]{ border: none; }
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.submit-box{
+    height: 20px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+}
+
+#greater{
+    color: white;
+    font-size: 7px;
+    padding: 5px;
+}
+
+.right{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.heading{
+    color: hsl(271, 36%, 24%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.desc{
+    color: hsl(270, 7%, 64%);
+    font-size: 16px;
+    text-align: justify;
+}

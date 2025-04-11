@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validations</title>
+</head>
+<body>
+    <form action="main.java">
+        <fieldset>
+            <legend>Reg form</legend>
+            <input type="text" name="" placeholder="Enter your name" required>
+            <input type="number" value="10" disabled>
+            <input type="number" pattern="[0-9]{10}">
+            <input type="email" placeholder="Enter your email" pattern="[A-Za-z0-9]@gmail.com">
+            <input type="password" placeholder="Enter your password" minlength="6" maxlength="10">
+            <input type="number" placeholder="Enter age" max="50" min="18">
+            <button>submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

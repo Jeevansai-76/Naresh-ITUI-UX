@@ -1,0 +1,127 @@
+#main{
+    height: 100vh;
+    background-color: bisque;
+}
+
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 20px;
+}
+
+/* div>h2>p{
+    color: blueviolet;
+}
+
+div>input{
+    border: 1px solid red;
+} */
+
+/* div p{
+    color: blue;
+}
+
+input+p{
+    color: red;
+}
+
+div+input{
+    background-color: burlywood;
+} */
+
+/* input[type="password"]{
+    border: 3px solid black;
+} */
+
+/* p[style="color: blue;"]{
+    background-color:red;
+} */
+
+/* p::first-letter{
+    font-size: 40px;
+    color: red;
+}
+
+p::first-line{
+    margin: 10px;
+    background-color: aqua;
+}
+
+p::before{
+    content: "\1F60A";
+}
+
+p::after{
+    content: "\1F60D";
+} */
+
+.child1:hover{
+    /* height: 200px;
+    width: 200px;
+    background-color: red; */
+    /* transform: rotate(45deg); */
+    /* transform: scale(1.5); */
+    transform: skew(20deg);
+}
+/* 
+a:link{
+    color: green;
+}
+
+a:active{
+    color:red;
+}
+
+a:visited{
+    color: violet;
+} */
+
+/* input:required{
+    background-color: rgb(197, 189, 189);
+}
+input:optional{
+    background-color: rgb(226, 12, 12);
+}
+
+input:disabled{
+    background-color: rgb(13, 195, 40);
+}
+
+input:enabled{
+    background-color: chartreuse;
+} */
+
+/* input:empty{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: blue;
+} */
+
+/* input:focus{
+    background-color: blueviolet;
+} */
+
+/* div:first-child{
+    background-color: yellowgreen;
+} */
+
+/* div:last-child{
+    background-color: yellowgreen;
+} */
+
+/* div:nth-child(odd){
+    background-color: yellowgreen;
+} */
+/* 
+div:nth-last-child(odd){
+    background-color: blueviolet;
+} */
+
+/* #main>p:nth-of-type(1){
+    color: red;
+} */
+
+/* #main>p:nth-last-child(4){
+    color: red;
+} */

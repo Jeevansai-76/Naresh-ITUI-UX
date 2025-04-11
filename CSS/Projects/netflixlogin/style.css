@@ -1,0 +1,130 @@
+body{
+    background-image: url(./bg-image.jpg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-container{
+    height: 100vh;
+    width: 100%;
+}
+
+.login-bg{
+    height:100vh ;
+    width: 450px;
+    margin: 0 auto;
+    background-color: rgb(20, 0, 1);
+    opacity: 0.8;
+    text-align: center;
+    padding: 30px 10px 30px 20px;
+}
+
+.signin-txt{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left:50px;
+}
+
+.inp1{
+    width: 70%;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 0.25rem;
+    border-color: rgb(247, 241, 241);
+    opacity: 0.7;
+    line-height: 1.5;
+    padding: 1.02rem 1rem;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    margin: 10px 30px;
+    margin-bottom: 15px;
+}
+
+.but1{
+    background-color: rgb(229, 9, 19);
+    width: 78%;
+    height: 60px;
+    margin: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.or{
+    color: rgb(181, 173, 162);
+    text-align: center;
+    width: 95%;
+}
+
+.but2{
+    background-color: rgb(51, 51, 51);
+    width: 78%;
+    height: 60px;
+    margin: 10px 30px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a{
+    font-size: 20px;
+    margin: 5px;
+    margin-bottom: 15px; 
+}
+
+.afp{
+    text-align: end;
+    color:rgb(255, 255, 255);
+}
+
+.cbd{
+    width: 100%;
+    text-align: left;
+    margin: 10px 50px;
+    margin-bottom: 15px;
+}
+#cblabel{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.desc{
+    text-align: left;
+    margin: 10px 50px;
+    margin-bottom: 15px;
+}
+
+.ti{
+    color: rgb(200, 165, 159);
+    font-size: 18px;
+    display: inline;
+}
+
+.signup{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.login-desc{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    margin: 10px 50px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.Learn{
+    text-align: left;
+    margin: 10px 50px;
+}

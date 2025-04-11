@@ -1,0 +1,58 @@
+body{
+    background: linear-gradient(to left,orange,white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 60vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns:auto 1fr ;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 130px;
+}
+
+.header{
+    border-radius: 10px;
+    background-color: white ;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+    padding: 24px;
+    color: orange;
+}
+
+.sidebar{
+    border-radius: 10px;
+    background-color: white ;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+    padding:55px;
+    color: orange;
+}
+
+.maincontent{
+    border-radius: 10px;
+    background-color: white ;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+    padding-top: 55px;
+    color: orange;
+}
+
+.footer{
+    border-radius: 10px;
+    background-color: white ;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+    padding: 24px;
+    color: orange;
+}
