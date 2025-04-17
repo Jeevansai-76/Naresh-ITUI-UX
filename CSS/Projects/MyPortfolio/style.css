@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#header-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(90, 85, 85);
+    border-radius: 20px;
+    padding: 10px 5px;
+    position: fixed;
+    top: 5px;
+    margin-top: 15px;
+}
+
+#header-container img{
+    height: 1.2rem;
+    background-color: white;
+    background-clip:padding-box;
+    transition: all 0.1s ease-in;
+}
+
+#header-container img:hover{
+    transform: scale(1.1);
+}
+
+
+#home-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 15px;
+    margin-bottom: 100px;
+}
+
+.main-heading{
+    line-height: 1.5;
+    font-size: 32px;
+    color: white;
+}
+
+.main-heading span{
+    color: rgb(209, 14, 46);
+}
+
+.main-desc{
+    line-height: 1.5;
+    color: white;
+    font-size: 16px;
+}
+
+.main-desc span{
+    color: blue;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttons{
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons button{
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.buttons :nth-child(1):hover{
+    background-color: rgb(0, 255, 34);
+}
+
+.buttons :nth-child(2):hover{
+    background-color: blue;
+}
+
+.about-heading{
+    font-size: 34px;
+    text-align: center;
+    color: rgb(0, 38, 255);
+    margin-bottom: 10px;
+}
+
+#about{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.profile img{
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+}
+
+.profile-desc{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.skills{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.skills h2{
+    color: rgb(131, 45, 201);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.skills ul{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px blue;
+    padding: 10px 0px;
+}
+
+.education{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.education h2{
+    color: rgb(131, 45, 201);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.education ul{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px blue;
+    padding: 10px;
+    padding-left:15px;
+}
+
+.education b{
+    color: blue;
+}
+
+.strengths{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px blue;
+    padding: 10px;
+    padding-left:15px;
+    margin: 0px 55px;
+    margin-right: 50px;
+    justify-self: center;
+}
+
+.strengths h2{
+    color: rgb(131, 45, 201);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.projectName{
+    color: blue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin:0px 12px;
+    box-shadow: 0px 4px 15px blue;
+}
+
+.project img{
+    height: 25vh;
+    width: 85vw;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+.project h2{
+    color: rgb(8, 138, 19);
+    font-size: 24px;
+}
+
+.project p{
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+    line-height: 1.5;
+}
+
+.project button{
+    color: white;
+    padding: 10px 5px;
+    background-color: blue;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.project button:hover{
+    background-color: yellow;
+}
+
+.contact-title{
+    color: blue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px 10px;
+    padding: 15px 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.email{
+    width: 90vw;
+    padding: 10px 5px;
+    color: white;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.whatsapp{
+    width: 90vw;
+    padding: 10px 5px;
+    color: white;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    font-size: 16px;
+
+}
+
+.message{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.input1{
+    width: 90vw;
+    padding: 20px 10px;
+    border-radius:10px ;
+    background-color: transparent;
+    color: white;
+}
+
+.textarea{
+    width: 90vw;
+    padding: 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    border-radius:10px ;
+    background-color: transparent;
+    color: white;
+}
+
+#contact button{
+    width: 90vw;
+    padding: 10px 5px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    color: lightgray;
+    margin-bottom: 50px;
+}
+
+.footer p{
+    color: white;
+    font-size: 14px;
+    padding-bottom:20px ;
+}
+
+@media (min-width:576px) and (max-width:956px){
+    .header{
+        margin-bottom: 100px;
+    }
+    #header-container{
+        width: 50%;
+        position: fixed;
+        top: 5px;
+    }
+    .main-heading{
+        width: 85%;
+        font-size: 40px;
+    }
+    .main-desc{
+        width: 80%;
+        font-size:20px ;
+    }
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+        width: 75%;
+        gap: 20px;
+    }
+    .buttons button{
+        width: 50%;
+        padding: 15px 0px;
+        font-size: 16px;
+    }
+    .about-heading{
+        font-size: 32px;
+    }
+    #about{
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 200px;
+    }
+    .profile{
+        padding: 100px 0px;
+        padding-left: 100px;
+        padding-bottom: 20px;
+        justify-self: start;
+    }
+    .profile img{
+        width: 30vw;
+        margin-bottom:30px ;
+    }
+    .profile-desc{
+        font-size: 13px;
+    }
+    .skills{
+        justify-content: center;
+        align-content: center;
+    }
+    .education{
+        width: 50vw;
+        justify-content: center;
+        align-content: center;
+        padding: 20px 0px;
+        padding-left: 50px;
+        justify-self: center ;
+        
+    }
+    .strengths{
+        width: 60%;
+        height: 70%;
+        align-self: center;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-left: 80px;
+    }
+    .projectName{
+        font-size: 36px;
+        margin-bottom: 100px;
+    }
+    #projects{
+        width: 85vw;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    
+    .project img{
+        width: 30vw;
+        gap: 20px;
+    }
+
+    .contact-title{
+        font-size: 32px;
+    }
+    #contact{
+        max-width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .contact-things{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .email{
+        width: 35vw;
+    }
+    .whatsapp{
+        width: 35vw;
+    }
+    .message{
+        font-size: 15px;
+    }
+    .input1{
+        width: 70vw;
+    }
+    .textarea{
+        width: 70vw;
+    }
+    #contact button{
+        width: 70vw;
+    }
+    .footer{
+        height: 10vh;
+        justify-content: center;
+    }
+    .footer p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width:956px){
+    .header{
+        margin-bottom: 100px;
+    }
+    #header-container{
+        width: 20%;
+        position: fixed;
+        top: 5px;
+    }
+    .main-heading{
+        width: 50%;
+        font-size: 48px;
+    }
+    .main-desc{
+        width: 50%;
+        font-size:20px ;
+    }
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+        width: 35%;
+        gap: 20px;
+    }
+    .buttons button{
+        width: 50%;
+        padding: 15px 0px;
+        font-size: 16px;
+    }
+    .about-heading{
+        font-size: 36px;
+    }
+    #about{
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 200px;
+    }
+    .profile{
+        padding: 100px 0px;
+        padding-left: 100px;
+        justify-self: start;
+    }
+    .profile img{
+        margin-bottom:30px ;
+    }
+    .profile-desc{
+        font-size: 15px;
+    }
+    .skills{
+        justify-content: center;
+        align-content: center;
+    }
+    .education{
+        width: 90%;
+        justify-content: center;
+        align-content: center;
+        padding: 20px 0px;
+        padding-left: 50px;
+        justify-self: center ;
+        
+    }
+    .strengths{
+        width: 60%;
+        height: 70%;
+        align-self: center;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-left: 80px;
+    }
+    .projectName{
+        font-size: 36px;
+        margin-bottom: 100px;
+    }
+    #projects{
+        width: 85vw;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    
+    .project img{
+        width: 25vw;
+        gap: 20px;
+    }
+
+    .contact-title{
+        font-size: 36px;
+    }
+    #contact{
+        max-width: 60vw;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .contact-things{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .email{
+        width: 25vw;
+    }
+    .whatsapp{
+        width: 25vw;
+    }
+    .message{
+        font-size: 14px;
+    }
+    .input1{
+        width: 50vw;
+    }
+    .textarea{
+        width: 50vw;
+    }
+    #contact button{
+        width: 50vw;
+    }
+    .footer{
+        height: 10vh;
+        justify-content: center;
+    }
+    .footer p{
+        font-size: 16px;
+    }
+    
+}
+
