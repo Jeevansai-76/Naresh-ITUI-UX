@@ -1,0 +1,43 @@
+
+:root{
+    --spoiler-color: #ffffff;
+    --post-bg:#000;
+}
+
+body{
+    background:linear-gradient(to right, blue 70%,yellow);
+}
+
+
+p{
+    color: var(--spoiler-color);
+    line-height: 1.5em;
+}
+
+.post{
+    background: var(--post-bg);
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.spoiler{
+    background-color: var(--spoiler-color);
+    color: var(--spoiler-color);
+    transition: all .5s ease-in;
+}
+
+.spoiler:hover{
+    background: initial;
+}
+
+@media (min-width:946px){
+    .container{
+        max-width: 45vw;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

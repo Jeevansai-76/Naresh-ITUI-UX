@@ -1,0 +1,44 @@
+.container{
+    display: inline-block;
+}
+
+.text{
+    font-size: 2em;
+    letter-spacing: 10px;
+    font-family: monospace;
+}
+
+.text1{
+    display: inline-block;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(10) infinite ,cursor .4s step-end infinite alternate;
+}
+
+.text1::before {
+    content: "CSS";
+    animation: changeWords 8s steps(1) infinite;
+    position: absolute;
+  }
+
+@keyframes cursor {
+    50%{
+        border: transparent;
+    }
+}
+
+@keyframes typing {
+    0%, 100% { width: 0; }
+    10%, 40% { width: 6ch; }     /* "CSS" */
+    50%, 60% { width: 8ch; }     /* "HTML" */
+    70%, 80% { width: 10ch; }    /* "Bootstrap" */
+    90% { width: 4ch; }          /* "JS" */
+}
+
+@keyframes changeWords {
+    0%, 10% { content: "CSS"; }
+    25%, 35% { content: "HTML"; }
+    50%, 65% { content: "Bootstrap"; }
+    75%, 90% { content: "JS"; }
+}
