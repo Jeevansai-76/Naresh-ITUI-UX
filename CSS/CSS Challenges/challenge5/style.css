@@ -1,0 +1,34 @@
+:root {
+    --color-light: lightgray;
+    --color-dark: darkgray;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    gap: 10px
+}
+
+.circle{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background: var(--color-dark);
+    animation: expandingCircles 1s ease-in  infinite alternate ;
+}
+
+@keyframes expandingCircles {
+    100%{
+        height: 1.6em;
+        width: 1.6em;
+        background: var(--color-light);
+    }
+}
