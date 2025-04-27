@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1:after{
+    content:"";
+    animation: swap 6s infinite;
+    background: var(--bg-word);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+@keyframes swap {
+    0%{
+        content: "Java";
+    }
+    25%{
+        content: "Oracle";
+    }
+    50%{
+        content: "Html";
+    }
+    75%{
+        content: "Css";
+    }
+    100%{
+        content: "Java";
+    }
+}
