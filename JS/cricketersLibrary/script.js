@@ -379,7 +379,7 @@ const cricketersList = [
     },
     image_url: "images/dravid.jpg",
   },
-];
+]; 
 
 // image name country role
 function displayCricketersData() {
