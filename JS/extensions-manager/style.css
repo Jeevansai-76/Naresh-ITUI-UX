@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{   
+    background: hsl(227, 75%, 14%);
+    padding-top: 50px;
+}
+
+.light {
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    color: #000000;
+}
+  
+.dark {
+    background:linear-gradient(180deg, #040918 0%, #091540 100%);;
+    color: #ffffff;
+}
+
+.extensions-header{
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: hsl(225, 23%, 24%);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.header-left img{
+    height: 30px;
+    color: white;
+}
+
+.header-left h2{
+    color: white;
+}
+
+.header-right{
+    border: 1px solid transparent;
+    background: hsl(226, 25%, 17%);
+    padding: 3px 5px;
+    border-radius:10px;
+}
+
+.list-header{
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.list-header h1{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.btn button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: hsl(226, 11%, 37%);
+    border: 1px solid transparent;
+    color: white;
+}
+
+.btn :nth-child(1)
+{
+    background-color: hsl(3, 86%, 64%);
+    color: black;
+}
+
+#extensions-list{
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+@media (max-width:992px) {
+    #extensions-list{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+
+@media (max-width:576px) {
+    #extensions-list{
+        grid-template-columns: repeat(1,auto);
+    }
+}
